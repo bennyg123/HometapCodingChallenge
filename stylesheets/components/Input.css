@@ -1,0 +1,35 @@
+.Input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing--l);
+}
+
+.Input_label {
+    font-size: var(--font-size-body-s);
+    margin-bottom: var(--spacing--s);
+}
+
+.Input_errorMessage {
+    color: var(--hometap-red);
+    font-size: var(--font-size-body-s);
+    margin-top: var(--spacing--s);
+}
+
+.Input_input {
+    font-size: var(--font-size-body); 
+    outline: none;
+    border: var(--spacing--xxxs) solid var(--hometap-white-100);
+    border-radius: var(--spacing--xs);
+    padding: calc(var(--spacing--xs) + var(--spacing--xxs)) var(--spacing--m);
+
+    transition: border-color ease-in-out 350ms;
+}
+
+.Input_input:focus {
+    border-color: var(--hometap-purple);
+}
+
+.Input__hasError .Input_input,
+.Input__hasError .Input_input:focus  {
+    border-color: var(--hometap-red);
+}

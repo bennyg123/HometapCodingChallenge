@@ -1,0 +1,40 @@
+{
+  "name": "hometap_address",
+  "version": "0.0.1",
+  "description": "coding challenge for hometap",
+  "main": "index.js",
+  "author": "Benny Guan",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rm -rf ./dist/scripts && mkdir ./dist/scripts && API_KEY=js-n0Igf9gdhw3jdzhXHlvSrorNT2Hev6JWaMzQFJSR45G45q9OGoau5YnbDp81PiMQ npx rollup -c",
+    "build-production": "NODE_ENV=production yarn run build",
+    "build-serve": "yarn run build && yarn run serve",
+    "serve": "npx http-server ./dist/"
+  },
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "rollup": "^2.23.1",
+    "rollup-plugin-postcss": "^3.1.5",
+    "rollup-plugin-typescript2": "^0.27.2"
+  },
+  "browserList": [
+    "defaults",
+    "since 2018",
+    "IE 11"
+  ],
+  "dependencies": {
+    "@rollup/plugin-replace": "^2.3.3",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "postcss-import": "^12.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.7",
+    "unfetch": "^4.1.0"
+  }
+}

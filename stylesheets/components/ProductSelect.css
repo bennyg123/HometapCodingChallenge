@@ -1,0 +1,63 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.ProductSelect div[class^="ProductSelect_Product"] {
+    display: flex;
+    
+    margin: var(--spacing--s) 0;
+    padding: var(--spacing--s);
+    border: var(--spacing--xxxs) solid var(--hometap-white-100);
+    border-radius: var(--spacing--xs);
+
+    transition: border-color ease-in-out 350ms; 
+
+    line-height: 2em;
+}
+
+
+.ProductSelect div[class$="__selected"],
+.ProductSelect div[class^="ProductSelect_Product"]:focus,
+.ProductSelect div[class^="ProductSelect_Product"]:hover {
+    border-color: var(--hometap-blue);
+    outline: none;
+}
+
+.ProductSelect_icon {
+    height: calc(var(--spacing--l) * 2);
+    width: calc(var(--spacing--l) * 2);
+
+    margin-right: var(--spacing--l);
+}
+
+.ProductSelect_title {
+    margin: var(--spacing--xs) 0;
+}
+
+.ProductSelect div {
+    opacity: 0;
+    animation: 700ms ease-out bounceIn;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+
+    font-size: var(--font-size-body-s);
+}
+
+.ProductSelect div:nth-of-type(2) {
+    animation-delay: 850ms;    
+}
+
+.ProductSelect div:nth-of-type(3) {
+    animation-delay: 1050ms;
+}

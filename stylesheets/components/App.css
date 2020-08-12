@@ -1,0 +1,68 @@
+@keyframes popIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.App {
+    display: flex;
+}
+
+
+.App_form {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    max-width: 40em;
+    margin: var(--spacing--xxl) auto 0;
+
+    padding: var(--spacing--l);
+    border: var(--spacing--xxxs) solid var(--hometap-white-100);
+    border-radius: var(--spacing--l);
+    box-shadow: var(--spacing--xs) var(--spacing--xs) var(--spacing--s) var(--hometap-white-75);
+
+    animation: 600ms ease-in popIn forwards;
+}
+
+.App_title {
+    font-size: var(--font-size-h1);
+    text-align: center;
+    margin: var(--spacing--m) var(--spacing--l);
+}
+
+.App_submitButton {
+    margin: var(--spacing--l) 0 var(--spacing--l) auto;
+    height: var(--spacing--xxl);
+
+
+    font-size: var(--font-size-body-l);
+    background: var(--hometap-blue);
+    color: var(--hometap-white);
+    border-radius: var(--spacing--xs);
+    padding: 0 var(--spacing--xl);
+    outline: none;
+}
+
+.App_submitButton:hover {
+    opacity: .75;
+}
+
+.App_submitButton:focus {
+    opacity: .50;
+}
+
+.App_submitButton:disabled {
+    opacity: .50;
+    background: var(--hometap-black-50);
+}
+
+.App_errorMessage {
+    color: var(--hometap-red);
+    font-size: var(--font-size-body-s);
+    margin-top: var(--spacing--s);
+}

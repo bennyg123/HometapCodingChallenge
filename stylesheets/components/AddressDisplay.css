@@ -1,0 +1,31 @@
+.AddressDisplay {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    max-width: 40em;
+    margin: var(--spacing--xxl) auto 0;
+
+    padding: var(--spacing--l);
+    border: var(--spacing--xxxs) solid var(--hometap-white-100);
+    border-radius: var(--spacing--l);
+    box-shadow: var(--spacing--xs) var(--spacing--xs) var(--spacing--s) var(--hometap-white-75);
+
+    animation: 600ms ease-in popIn forwards;
+}
+
+.AddressDisplay_heading,
+.AddressDisplay_name {
+    font-size: var(--font-size-h3);
+}
+
+.AddressDisplay_city,
+.AddressDisplay_address {
+    font-size: var(--font-size-body);
+}
+
+.AddressDisplay_name,
+.AddressDisplay_city,
+.AddressDisplay_address {
+    margin: var(--spacing--s) 0;
+}

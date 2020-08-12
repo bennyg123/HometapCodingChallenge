@@ -1,0 +1,46 @@
+:root {
+    --hometap-blue: #366CED;
+    --hometap-purple: #7070FF;
+    --hometap-light-blue: #70DAFF;
+    --hometap-green: #25BE8A;
+    --hometap-teal: #35B2AD;
+    --hometap-yellow: #FFCC3F;
+    --hometap-red: #B41A1A;
+
+    --hometap-black-100: #152033;
+    --hometap-black-75: #424C5E;
+    --hometap-black-50: #687183;
+    --hometap-black: #919AAC;
+
+    --hometap-white-100: #D8D8D8;
+    --hometap-white-75: #EEEEEE;
+    --hometap-white-25: #F6F6F6;
+    --hometap-white: #FBFBFA;
+
+    --font-size-h1: 1.75em;
+    --font-size-h2: 1.375em;
+    --font-size-h3: 1.25em;
+    --font-size-h4: 0.875em;
+
+    --font-size-body-l: 1.125em;
+    --font-size-body: 1em;
+    --font-size-body-s: 0.875em;
+
+    --spacing--xxxs: 0.0625em; /* 1px */
+    --spacing--xxs: 0.125em; /* 2px */
+    --spacing--xs: 0.250em; /* 4px */
+    --spacing--s: 0.5em; /* 8px */
+    --spacing--m: 0.75em; /* 12px */
+    --spacing--l: 1em; /* 16px */
+    --spacing--xl: 1.50em; /* 20px */
+    --spacing--xxl: 3em; /* 48px */
+}
+
+/* Tablet and above stylings */
+@media screen and (min-device-width: 768px) {
+    --font-size-h1: 2.375em;
+    --font-size-h2: 1.75em;
+    --font-size-h3: 1.5em;
+    --font-size-h4: 1.25em;
+    --font-size-h5: 1.125em;
+}
